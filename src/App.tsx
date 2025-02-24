@@ -64,7 +64,7 @@ function App() {
             className="text-center"
           >
             <img
-              src="/portfolio-website/public/profile.jpg"
+              src="/portfolio-website/profile.jpg"
               alt="Profile"
               className="w-40 h-40 rounded-full mx-auto mb-8 object-cover ring-4 ring-blue-500/50"
             />
