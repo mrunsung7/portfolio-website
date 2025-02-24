@@ -97,7 +97,69 @@ function App() {
           </motion.div>
         </div>
       </section>
-
+      {/* About Me Section */}
+      <section className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
+        <div className="container mx-auto px-6 text-center relative">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+            About Me
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+            I'm Ashwin Kumar, a passionate Full Stack Developer and Machine
+            Learning Engineer, currently pursuing an Integrated M.Tech in
+            Computer Science and Engineering with a specialization in Data
+            Science at Vellore Institute of Technology.
+            <br />
+            <br />
+            With a strong foundation in software development and AI, I enjoy
+            working on projects that merge innovation and technology. My
+            expertise lies in full-stack development, deep learning, and cloud
+            computing.
+            <br />
+            <br />
+            Apart from coding, I actively participate in hackathons, research
+            publications, and sports, having been a state-level athlete and an
+            Air Force NCC cadet.
+          </p>
+        </div>
+      </section>
+      {/* Skills Section */}
+      <section className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
+        <div className="container mx-auto px-6 relative">
+          <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+            Technical Skills
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+            {[
+              "Java",
+              "Python",
+              "C++",
+              "Swift",
+              "SQL",
+              "ReactJS",
+              "Flask",
+              "PostgreSQL",
+              "Machine Learning",
+              "Deep Learning",
+              "AWS",
+              "Tableau",
+              "Power BI",
+              "iOS Development",
+            ].map((skill, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.1 }}
+                className="bg-gray-800/50 backdrop-blur-lg rounded-lg p-4 border border-gray-700/50"
+              >
+                <span className="text-blue-400 text-lg font-semibold">
+                  {skill}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Experience Timeline */}
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
@@ -130,7 +192,6 @@ function App() {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </section>
-
       {/* Projects */}
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
@@ -165,7 +226,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Project Modal */}
       <AnimatePresence>
         {selectedProject && (
@@ -209,7 +269,6 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
-
       {/* Accomplishments */}
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
@@ -238,7 +297,6 @@ function App() {
                 </li>
               </ul>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -258,7 +316,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Contact */}
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-30" />
