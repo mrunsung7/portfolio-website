@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 3px 0 #3b82f6;
+  backdrop-filter: blur(12px);
+}
+
+.vertical-timeline::before {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+}
